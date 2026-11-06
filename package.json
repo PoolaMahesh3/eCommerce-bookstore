@@ -1,0 +1,23 @@
+{
+  "name": "bookstore-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "eCommerce bookstore backend (modular monolith, Fastify + SQLite)",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "gen-env": "node scripts/gen-env.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "dev": "node --watch --env-file-if-exists=.env src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "dependencies": {
+    "fastify": "^5.12.8",
+    "jose": "^6.2.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

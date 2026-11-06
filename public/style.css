@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1f2328; background: #f7f8fa; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+header nav { display: flex; gap: 16px; align-items: center; }
+a { color: #3b82d4; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.brand { font-size: 20px; font-weight: 600; color: #1f2328; }
+main { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+h1 { font-size: 22px; margin: 0 0 16px; }
+h2 { font-size: 17px; margin: 24px 0 8px; }
+.muted { color: #57606a; }
+#notice { max-width: 960px; margin: 16px auto 0; padding: 10px 14px; background: #e8f1fb; border: 1px solid #3b82d4; border-radius: 6px; }
+#notice.error { background: #fdecec; border-color: #cf222e; }
+.toolbar, .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+.toolbar input[type=search] { flex: 1; min-width: 200px; }
+input, select, button { font: inherit; padding: 7px 10px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; }
+button { cursor: pointer; background: #3b82d4; border-color: #3b82d4; color: #fff; }
+button.secondary { background: #fff; color: #1f2328; border-color: #d0d7de; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; }
+.card h3 { margin: 0 0 4px; font-size: 16px; }
+.panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e5e7eb; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e7eb; }
+td.num, th.num { text-align: right; }
+form.stack { display: grid; gap: 10px; max-width: 380px; }
+form.stack label { display: grid; gap: 4px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.totals { text-align: right; margin: 12px 0; }
